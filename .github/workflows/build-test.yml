@@ -75,7 +75,7 @@ jobs:
       - name: Install dependencies
         run: |
           git clone --branch issue-3499 https://github.com/abravalheri/setuptools.git
-          python -m pip install --upgrade --force-reinstall ./setuptools
+          python -m pip install --upgrade --force-reinstall --no-deps --no-cache-dir ./setuptools
       - name: Install project
         run: |
           pip install -e .
