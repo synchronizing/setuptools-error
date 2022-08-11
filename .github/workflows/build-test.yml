@@ -74,7 +74,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          git clone https://github.com/abravalheri/setuptools.git
+          git clone --branch issue-3499 https://github.com/abravalheri/setuptools.git
           python -m pip install --upgrade --force-reinstall ./setuptools
       - name: Install project
         run: |
