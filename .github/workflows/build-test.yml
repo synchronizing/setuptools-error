@@ -74,7 +74,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade setuptools
+          python -m pip install git+https://github.com/abravalheri/setuptools.git
           pip install -e .
       - name: Hello World
         run: |
