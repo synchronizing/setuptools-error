@@ -6,6 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         python-version:
           [
@@ -36,6 +37,7 @@ jobs:
             "3.9.10",
             "3.9.11",
             "3.9.12",
+            "3.9.13",
           ]
 
     steps:
