@@ -1,0 +1,13 @@
+# Python
+*.pyc
+*.egg-info/
+.pytest_cache/
+.eggs
+
+# Environment
+.env
+.venv
+.vscode
+.docker_bash_history
+.DS_Store
+workspace.code-workspace
